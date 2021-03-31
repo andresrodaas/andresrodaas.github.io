@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMC 11 </title>
+</head>
+<style>
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    
+    margin: auto;
+}
+
+body {
+  background-color: rgb(6, 1, 56);
+}
+
+.big-img{
+  display: none;
+ background: url('./pp.jfif') no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* NAVBAR STYLING */
+.navbar{
+    background-color: black;
+    color: #fff;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar a.navbar-brand {
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .navbar a.navbar-brand span {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+  }
+  .navbar ul li {
+    display: inline-block;
+  }
+  .navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+  }
+  .navbar ul li a:hover {
+    background-color: rgba(255,255,255,0.15);
+  }
+  .navbar .navbar-toggler {
+    display: none;
+  }
+
+.item img{
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    
+}
+
+  @media (max-width: 767px) {   
+      
+      .card img {
+          width: 100%;
+      }
+  
+      .navbar {
+        padding: 0;
+      }
+      .navbar ul {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0,0,0,0.9);
+        /* height: auto; */
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+      }
+      .navbar ul.open {
+        max-height: 100vh;
+      }
+      .navbar ul li {
+        width: 100%;
+        /* border-bottom: 1px solid rgba(255,255,255,0.3); */
+      }
+      .navbar ul li a {
+        padding: 0;
+      }
+      .navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        /* border: none; */
+        /* border-radius: 4px; */
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+      }
+      .navbar .navbar-toggler span,
+      .navbar .navbar-toggler span::before,
+      .navbar .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+      }
+      .navbar .navbar-toggler span::before {
+        transform: translateY(-8px);
+      }
+      .navbar .navbar-toggler span::after {
+        transform: translateY(5px);
+      }
+      
+      .navbar .navbar-toggler.open-navbar-toggler span {
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        /* transform: scale(0.85) rotate(270deg); */
+      }
+      .navbar .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+      }
+      .navbar .navbar-toggler.open-navbar-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+      }
+    }
+
+    @media (max-width: 600px) {
+ .imagenes1{
+     width: 60%;
+ }
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand"><span>L</span><span>M</span><span>C</span></a>
+        <ul>
+            <li><a href="informacion.html">INFORMACION</a></li>
+            <li><a href="inscribete.html">INSCRIBETE</a></li>
+            <li><a href="topplayers.html">TOP PLAYERS</a></li>
+            <li><a href="ediciones.html">EDICIONES</a></li>
+
+        </ul>
+        <button class="navbar-toggler">
+            <span></span>
+        </button>
+
+    </nav>
+
+   <div class="container">
+       <div class="item">
+           <a href="lmc11.html"><img src="./WhatsApp Image 2020-05-01 at 1.11.50 PM.jpeg" alt=""></a>
+       </div>
+       <div class="item">
+        <img src="./WhatsApp Image 2020-05-01 at 1.12.20 PM.jpeg" alt="">
+    </div>
+    <div class="item">
+        <img src="./Capture.PNG" alt="">
+    </div>
+    <div class="item">
+        <img src="./grupo a.PNG" alt="">
+    </div>
+    <div class="item">
+        <img src="./grupob.PNG" alt="">
+    </div>
+   </div>
+        
+        
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

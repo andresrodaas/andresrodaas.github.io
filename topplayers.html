@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Players</title>
+    <style>
+        *{
+   
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+body {
+  background: url('https://pixelz.cc/wp-content/uploads/2018/07/blue-spirals-uhd-4k-wallpaper.jpg');
+}
+
+.maxwidth{
+    max-width: 1000px;
+    padding: 0 80px;
+    
+    margin: auto;
+}
+
+table {
+  
+  color: white;
+}
+
+.navbar img {
+  width: 150px;
+  margin-top: 5px;
+}
+
+.navbar{
+    background-color: black;
+    color: #fff;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar a.navbar-brand {
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  .navbar a.navbar-brand span {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+    
+  }
+  .navbar ul li {
+    display: inline-block;
+    
+  }
+  .navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+  }
+  .navbar ul li a:hover {
+    background-color: rgba(255,255,255,0.15);
+  }
+  .navbar .navbar-toggler {
+    display: none;
+  }
+/* main section  */
+
+
+
+.topplayers{
+    margin-top: 100px;
+   
+    
+    
+}
+
+
+.topplayers h1{
+  text-align: center;
+  color: white;
+}
+
+.textplayers h2,p{
+  text-align: center;
+  color: white;
+}
+
+
+
+@media (max-width: 767px) {
+      
+      .card img {
+          width: 100%;
+      }
+  
+      .navbar {
+        padding: 0;
+      }
+      .navbar ul {
+        width: 100%;
+        padding: 0;
+        background-color: rgba(0,0,0,0.9);
+        /* height: auto; */
+        height: 100vh;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.3s;
+      }
+      .navbar ul.open {
+        max-height: 100vh;
+      }
+      .navbar ul li {
+        width: 100%;
+        /* border-bottom: 1px solid rgba(255,255,255,0.3); */
+      }
+      .navbar ul li a {
+        padding: 0;
+      }
+      .navbar .navbar-toggler {
+        display: block;
+        position: absolute;
+        height: 40px;
+        top: 20px;
+        right: 20px;
+        background-color: transparent;
+        color: #fff;
+        border: 3px solid #fff;
+        /* border: none; */
+        /* border-radius: 4px; */
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+      }
+      .navbar .navbar-toggler span,
+      .navbar .navbar-toggler span::before,
+      .navbar .navbar-toggler span::after {
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 3px;
+        width: 28px;
+        border-radius: 4px;
+        transition: all ease-in-out 0.3s;
+      }
+      .navbar .navbar-toggler span::before {
+        transform: translateY(-8px);
+      }
+      .navbar .navbar-toggler span::after {
+        transform: translateY(5px);
+      }
+      
+      .navbar .navbar-toggler.open-navbar-toggler span {
+        /* transform: rotate(90deg); */
+        background-color: transparent;
+        /* transform: scale(0.85) rotate(270deg); */
+      }
+      .navbar .navbar-toggler.open-navbar-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+      }
+      .navbar .navbar-toggler.open-navbar-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+      }
+    }
+
+    @media (max-width: 567px){
+body{
+  background: #040f13;
+}
+
+      .topplayers{
+        display: block;
+      }
+
+      .textplayers{
+  width: 100%;
+
+}
+
+.navbar img {
+    width: 100px;
+    margin-top: 15px;
+    
+  }
+
+.topplayers h1,h2,p{
+  text-align: center;
+  color: white;
+}
+
+table {
+  width: 100%;
+}
+
+}
+    
+   
+    
+
+    
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand"> <img src="./logo.jpeg" alt="" class="logo"></a>
+    <ul>
+        <li><a href="informacion.html">INFORMACION</a></li>
+        <li><a href="inscribete.html">INSCRIBETE</a></li>
+        <li><a href="ediciones.html">EDICIONES</a></li>
+        <li><a href="#home">CAMPEONES</a></li>
+
+    </ul>
+    <button class="navbar-toggler">
+        <span></span>
+    </button>
+
+</nav>
+
+   <div class="maxwidth">
+    <div class="topplayers">
+      <div class="title">
+        <h1>TOP PLAYERS</h1>
+      </div>
+    
+<table width="100%" border="1"  bordercolor='#008080' align="center" >
+  
+          <tr >
+              
+              <th>Rank</th>
+              <th >Player</th>
+              <th>Puntos</th>
+          </tr>
+          <tr>
+              <th>1</th>
+              <th>Yanstorm</th>
+              <th>19</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>Eams</th>
+              <th>15</th>
+          </tr>
+          <tr>
+              <th>3</th>
+              <th>Darkgoso</th>
+              <th>13</th>
+          </tr>
+
+          <tr>
+            <th>4</th>
+            <th>Krusnik2k</th>
+            <th>11</th>
+          </tr>
+          <tr>
+            <th>5</th>
+            <th>Jorgedu</th>
+            <th>11</th>
+          </tr>
+          <tr>
+            <th>6</th>
+            <th>Gnc*</th>
+            <th>11</th>
+          </tr>
+          <tr>
+            <th>7</th>
+            <th>Brickman</th>
+            <th>10</th>
+          </tr>
+          <tr>
+            <th>8</th>
+            <th>Lhuis</th>
+            <th>9</th>
+          </tr>
+          <tr>
+            <th>9</th>
+            <th>Mau</th>
+            <th>9</th>
+          </tr>
+          <tr>
+            <th>10</th>
+            <th>Zeuxodia</th>
+            <th>8</th>
+
+          </tr>
+          <tr>
+            <th>11</th>
+            <th>Beyako</th>
+            <th>8</th>
+          </tr>
+          <tr>
+            <th>12</th>
+            <th>Julio</th>
+            <th>8</th>
+          </tr>
+          <tr>
+            <th>13</th>
+            <th>Mr Problem</th>
+            <th>8</th>
+          </tr>
+          <tr>
+            <th>14</th>
+            <th>Jako</th>
+            <th>7</th>
+          </tr>
+          <tr>
+            <th>15</th>
+            <th>JuanPY</th>
+            <th>6</th>
+
+          </tr>
+          <tr>
+            <th>16</th>
+            <th>Rodjean</th>
+            <th>6</th>
+          </tr>
+          <tr>
+            <th>17</th>
+            <th>Enruik</th>
+            <th>6</th>
+          </tr>
+          <th>18</th>
+          <th>Zeu</th>
+          <th>6</th>
+          <tr>
+            <th>19</th>
+            <th>Secu</th>
+            <th>6</th>
+          </tr>
+          <th>20</th>
+          <th>Capi</th>
+          <th>6</th>
+      </table>
+
+      <div class="textplayers">
+        <h2>Como Ganar Los Puntos?</h2>
+        <p>TOP 16: 1PT</p>
+        <p>TOP 8: 2PTS</p>
+        <p>TOP 4: 3PTS</p>
+        <p>FINALISTA: 4PTS</p>
+        <p>CAMPEON: 5PTS</p>
+      </div>
+        
+
+        
+    </div>
+
+  </div>
+
+
+   
+    <script src="js.js"></script>
+</body>
+</html>
