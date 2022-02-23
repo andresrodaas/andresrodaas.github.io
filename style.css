@@ -5,6 +5,30 @@
   background-color: #fff;
   font-family: 'Open Sans', sans-serif; }
 
+img {
+    max-width: 100%;
+}
+
+.book-store{
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: 500;
+    padding: 0 30px;
+}
+
+
+
 .book-cover {
   display: block;
   margin: 0 auto;
